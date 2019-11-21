@@ -23,3 +23,18 @@ def FindWordCount(text, check):
         if word==check:
             count+=1
     return count
+
+def ScoreFinder(players, scores, search):
+    search=search.upper()
+    error=0
+    for i in range(len(players)):
+        check=players[i].upper()
+        if check==search:
+            location=i
+            error=1
+    if error==0:
+        print('OUTPUT player not found)
+    elif error==1:
+        player=players[location]
+        score=scores[location]
+        print('OUTPUT {0} got a score of {1}'.format(player, score))
