@@ -38,3 +38,5 @@ def ScoreFinder(players, scores, search):
         player=players[location]
         score=scores[location]
         print('OUTPUT {0} got a score of {1}'.format(player, score))
+
+def Union(hi)
