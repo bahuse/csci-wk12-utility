@@ -1,4 +1,7 @@
-
+#https://github.com/bahuse/csci-wk12-utility
+#Brady Huseman
+#CSCI 102 - Section C
+#Week 11 - Part B
 def PrintOutput(string):
     print('OUTPUT', string)
 
@@ -33,12 +36,32 @@ def ScoreFinder(players, scores, search):
             location=i
             error=1
     if error==0:
-        print('OUTPUT player not found)
+        print('OUTPUT player not found')
     elif error==1:
         player=players[location]
         score=scores[location]
         print('OUTPUT {0} got a score of {1}'.format(player, score))
 
-def Union(hi)
+def Union(list1, list2):
+    output_list=list1+list2
+    return output_list
 
-more
+def Intersection(list1, list2):
+    match=[]
+    for ele in list1:
+        for ele2 in list2:
+            if ele==ele2:            
+                match.append(ele)
+    return match
+
+def NotIn(list1, list2):
+    notin=[]
+    match=[]
+    for ele in list1:
+        for ele2 in list2:
+            if ele==ele2:            
+                match.append(ele)
+    for ele in list1:
+        if ele not in match:
+            notin.append(ele)
+    return notin
